@@ -1,8 +1,11 @@
 import React from 'react';
 import './Landing.css';
 
+
 const Landing = () => (
-  <section className="landing">
+
+  <section className="Landing">
+
     <h1 className="hero-title">Turn the music up!</h1>
 
     <section className="selling-points">
@@ -13,6 +16,9 @@ const Landing = () => (
       <div className="point">
         <h2 className="point-title">Unlimited, streaming, ad-free</h2>
         <p className="point-description">No arbitrary limits. No distractions.</p>
+      </div>
+      <div className="Phone-image">
+      <img className="Phone" src={window.location.origin + '/assets/images/blocJamsIphone.jpg'} />
       </div>
     </section>
   </section>
