@@ -99,10 +99,10 @@ class Album extends Component {
     }
 
     formatTime(seconds) {
-      if (seconds){
-        return (Math.floor(seconds / 60)) + ":" + (Math.floor(seconds % 60)) ;
-      } else if (seconds < 10){
-        return (Math.floor(seconds / 60)) + ":0" + (Math.floor(seconds % 60));
+      if (seconds < 10){
+        return (Math.floor(seconds / 60)) + ":0" + (Math.floor(seconds % 60)) ;
+      } else if (seconds){
+        return (Math.floor(seconds / 60)) + ":" + (Math.floor(seconds % 60));
       }
       return "-:--";
     }

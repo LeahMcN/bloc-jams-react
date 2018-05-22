@@ -26,7 +26,7 @@ class App extends Component {
       </header>
 
       <div className="App">
-        <h1 className="Header">Bloc Jams</h1>
+        
         <main>
           <Route exact path="/" component={Landing} />
           <Route path="/library" component={Library} />

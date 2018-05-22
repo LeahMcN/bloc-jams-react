@@ -11,7 +11,7 @@ class Library extends Component {
   }
   render() {
     return (
-      <section className='library'>
+      <section className='Library'>
         {
           this.state.albums.map( (album, index) =>
             <Link to={`/album/${album.slug}`} key={index}>
@@ -22,6 +22,9 @@ class Library extends Component {
             </Link>
           )
         }
+        <div className="Logo-image">
+        <img className="Logo" src={window.location.origin + '/assets/images/bloc_jams_logo.png'} />
+        </div>
       </section>
     );
   }
