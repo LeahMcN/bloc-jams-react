@@ -5,7 +5,10 @@ import './PlayerBar.css';
    render() {
      return (
        <section className="Player-bar">
-       <section id="time-control">
+        <section id="time-control">
+          <div className="Timer">
+          <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
+          </div>
         <input
            type="range"
            className="seek-bar"
@@ -15,9 +18,7 @@ import './PlayerBar.css';
            step="0.01"
            onChange={this.props.handleTimeChange}
            />
-           <div className="Timer">
-           <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
-           </div>
+           <div className="total-time">{this.props.formatTime(this.props.duration)}</div>
        </section>
        <section id="buttons">
           <button id="previous" onClick={this.props.handlePrevClick}>

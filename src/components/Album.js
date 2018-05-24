@@ -99,9 +99,14 @@ class Album extends Component {
     }
 
     formatTime(seconds) {
+
       if (seconds < 10){
         return (Math.floor(seconds / 60)) + ":0" + (Math.floor(seconds % 60)) ;
-      } else if (seconds){
+      } else if (seconds > 60 && seconds < 70 || seconds > 120 && seconds < 130 ||
+        seconds > 180 && seconds < 190 || seconds > 240 && seconds < 250 ||
+        seconds > 300 && seconds < 310 || seconds > 360 && seconds < 370){
+        return (Math.floor(seconds / 60)) + ":0" + (Math.floor(seconds % 60));
+      } else if (seconds) {
         return (Math.floor(seconds / 60)) + ":" + (Math.floor(seconds % 60));
       }
       return "-:--";
