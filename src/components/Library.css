@@ -15,8 +15,38 @@ body {
 
 .Logo {
   position: fixed;
-    top: 30px;
-    bottom: 0;
-    left: 120px;
-    width: 90px;
+  top: 30px;
+  bottom: 0;
+  left: 120px;
+  width: 90px;
+}
+
+.Album-Cover {
+  box-shadow: 0 2px 4px -4px rgba(0, 0, 0, .4), 0 50px 35px -20px rgba(0, 0, 0, .4);
+  border-radius: 30px;
+  height: 500px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+}
+
+.Music-info {
+  padding-bottom: 5px;
+  text-align: center;
+  color: white;
+
+}
+
+a {
+text-decoration: none;
+}
+
+.Musician  {
+  font-size: 25px;
+  margin: 1px;
+}
+
+.Title {
+  font-size: 20px;
 }

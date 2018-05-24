@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
+import './Album.css';
+
 
 class Album extends Component {
   constructor(props) {
@@ -17,8 +19,6 @@ class Album extends Component {
       duration: album.songs[0].duration,
       isPlaying: false,
       volume: 0,
-
-
     };
 
     this.audioElement = document.createElement('audio');
@@ -118,12 +118,13 @@ class Album extends Component {
 
    render() {
      return (
-       <section className="album">
+       <section className="Container">
+       <section className="Album">
          <section id="album-info">
           <img id="album-cover-art" src={this.state.album.albumCover} />
-          <div className="album-details">
+          <div className="Album-details">
             <h1 id="album-title">{this.state.album.title}</h1>
-            <h2 className="artist">{this.state.album.artist}</h2>
+            <h2 className="Artist">{this.state.album.artist}</h2>
             <div id="release-info">{this.state.album.releaseInfo}</div>
           </div>
         </section>
@@ -138,14 +139,12 @@ class Album extends Component {
               <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
                 <td className="song-number">{index+1}</td>
                 <td className="song-title">{song.title}</td>
-
-                <td className="song-actions">
-                <button>
+                <td className="Song-actions">
+                <button className="Play-or-pause">
                   <span className="ion-play"></span>
                   <span className="ion-pause"></span>
                 </button>
                 </td>
-
                 <td className="song-duration">{this.formatTime(song.duration)}</td>
               </tr>
             )}
@@ -162,8 +161,11 @@ class Album extends Component {
           handleTimeChange={(e) => this.handleTimeChange(e)}
           formatTime={(e) => this.formatTime(e)}
           handleVolumeChange={(e) => this.handleVolumeChange(e)}
-
         />
+       </section>
+       <div className="Logo-image">
+       <img className="Logo" src={window.location.origin + '/assets/images/bloc_jams_logo.png'} />
+       </div>
        </section>
      );
    }

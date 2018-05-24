@@ -1,18 +1,54 @@
 .Phone {
   position: fixed;
-    top: 10px;
-    bottom: 0;
-    right: 120px;
-    width: 400px;
+  top: 10px;
+  bottom: 0;
+  right: 120px;
+  width: 400px;
 }
 
 .Landing {
   position: relative;
-    left: 0px;
-    margin-right: 500px;
+  margin-left: 20px;
+  margin-right: 500px;
+  padding: 10px;
 }
 
 .Header {
-  margin-top: 50px;
-  margin-left: 10px;
+
+  position: relative;
+  margin-top: 55px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  letter-spacing: -1px;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+.Selling-points {
+  padding-left: 41px;
+  padding-right: 15px;
+  margin: 20px;
+  font-size: 20px;
+  color: rgba(104,104,104);
+}
+
+.Hero-title {
+  margin-left: 28px;
+  display: inline;
+  position: relative;
+  font-size: 45px;
+  letter-spacing: -3px;
+  color: rgba(0,0,255,0.6);
+}
+
+.Point {
+  font-size: 15px;
+}
+
+.Point-description {
+  margin-bottom: 0px;
 }

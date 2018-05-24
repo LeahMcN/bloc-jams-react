@@ -1,0 +1,102 @@
+
+.Player-bar {
+  background-color: rgba(255, 255, 255, .2);
+  height: 150px;
+  position: absolute;
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+#play-pause {
+  height: 60px;
+	width: 60px;
+  margin: auto;
+  background: linear-gradient(to top, rgba(255, 255, 255, .1), rgba(255, 255, 255, .04));
+  box-shadow: 0 2px 2px 0;
+	cursor: pointer;
+	mix-blend-mode: overlay;
+  border-radius: 60px;
+  border-color: rgba(255, 255, 255, .2);
+  font-size: 30px;
+}
+
+#play-pause:hover {
+  background: radial-gradient(ellipse at center,
+  rgba(12, 11, 23, .4) 0%,
+  rgba(86, 76, 132, .1) 60%,
+  rgba(255, 255, 255, .2) 100%);
+  border-radius: 60px;
+  cursor: pointer;
+	content: '';
+  height: 60px;
+  width: 60px;
+  transform: scale(.9)
+}
+
+button:focus {
+  outline: none;
+}
+
+#previous,
+#next {
+  background: rgba(255, 255, 255, .01);
+	border-radius: 40px;
+  border-color: rgba(255, 255, 255, .2);
+	box-shadow: 0 2px 2px 0;
+	cursor: pointer;
+  padding-top: 5px;
+	margin: 10px;
+  height: 40px;
+	width: 40px;
+  font-size: 15px;
+}
+
+#next:hover {
+  background: radial-gradient(ellipse at center,
+  rgba(12, 11, 23, .4) 0%,
+  rgba(86, 76, 132, .1) 60%,
+  rgba(255, 255, 255, .2) 100%);
+  border-radius: 40px;
+  cursor: pointer;
+  content: '';
+  height: 40px;
+  width: 40px;
+  transform: scale(.9)
+}
+
+#previous:hover {
+  background: radial-gradient(ellipse at center,
+  rgba(12, 11, 23, .4) 0%,
+  rgba(86, 76, 132, .1) 60%,
+  rgba(255, 255, 255, .2) 100%);
+  border-radius: 40px;
+  cursor: pointer;
+  content: '';
+  height: 40px;
+  width: 40px;
+  transform: scale(.9)
+}
+
+.seek-bar {
+  position: relative;
+  width: 95%;
+}
+
+.Timer{
+  margin-left: 430px;
+  font-size: 15px;
+}
+
+#volume-control {
+  margin-top: 10px;
+  width: 480px;
+}
+
+.Volume-icon {
+  float: right;
+  margin-left: -200px;
+  margin-right: 155px;
+  margin-bottom: 1px;
+  font-size: 20px;
+}

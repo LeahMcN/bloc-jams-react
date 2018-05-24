@@ -15,10 +15,12 @@ class Library extends Component {
         {
           this.state.albums.map( (album, index) =>
             <Link to={`/album/${album.slug}`} key={index}>
-              <img src={album.albumCover} alt={album.title} />
-              <div>{album.title}</div>
-              <div>{album.artist}</div>
-              <div>{album.songs.length} songs</div>
+              <img className="Album-Cover" src={album.albumCover} alt={album.title} />
+              <div className="Music-info">
+              <div className="Title">{album.title}</div>
+              <div className="Musician">{album.artist}</div>
+              <div className="Song-count">{album.songs.length} songs</div>
+              </div>
             </Link>
           )
         }
